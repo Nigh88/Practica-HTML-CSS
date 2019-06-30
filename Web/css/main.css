@@ -1,0 +1,119 @@
+@font-face {
+    font-family: baureg;
+    src: url(../fonts/bauerg.TTF);
+  }
+
+.news{
+    padding: 10rem;
+    text-align: center;
+}
+
+section{
+    padding:0;
+    text-align: center;
+}
+
+h1{
+    font-family: baureg;
+    position: center;
+    color: white;
+    font-size: 80px;
+    margin-top:0;
+}
+
+.films .title h1{
+    font-family: baureg;
+    position: center;
+    color: black;
+    font-size: 80px;
+    margin:0;
+}
+
+.regleta{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.news{
+    background: url(../images/backgroundF.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.films{
+    background: url(../images/backgroundN.jpg)
+}
+
+.series{
+    background: url(../images/backgroundS.jpg)
+}
+
+footer{
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .6rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer p{
+    font-size: 12px;
+    color: gray;
+}
+
+.footer a{
+    text-decoration: none;
+    margin: 10px;
+    color: lightgray;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+@media all and (max-width: 1720px){
+    .regleta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+
+    .films .title h1{
+        font-size: 6vw;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .regleta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    h1{
+        font-size: 6vw;
+        /* min-width: 100px; */
+        position: relative;
+        right: 11vw;
+    }
+
+    .films .title h1{
+        font-size: 6vw;
+        position: relative;
+        right: 11vw;
+    }
+}

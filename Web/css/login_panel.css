@@ -1,0 +1,67 @@
+.login_panel{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.login_panel h1{
+    margin: none;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.login_panel p{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+
+}
+
+.login_panel form {
+    border: 0;
+    padding: 2rem;
+    border-radius: 40px;
+    background-color: rgba(5, 5, 5, 0.9);
+}
+
+.login_panel form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: .5rem;
+    border: solid 1px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.login_panel input[type="submit"] {
+    padding: .5rem;
+    font-size: 20px;
+    color: white;
+    min-width: 20rem;
+    border-radius: 13px;
+    border: 0;
+    background: red;
+    box-shadow: 10px;
+}
+
+.login_panel input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(238, 41, 41);
+    color: black;
+}
+
+.login_panel a{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+}
+
+.login_panel a:hover{
+    color: whitesmoke;
+}

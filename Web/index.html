@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login_panel.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/pandatv.png">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/logo2.png">
+
+        <div class="login_panel">
+            <form class="login_form" action="main.html" id="login-form" method="POST">
+                <p>
+                    <h1>Acceder</h1>
+                </p>
+                <p>
+                    <label for="form-user">Usuario:</label>
+                    <input type="email" name="form-email" id="form-email" placeholder="Escribe tu email" required>
+                </p>
+                <p>
+                    <label for="form-password">Contraseña:</label>
+                    <input type="password" name="form-password" id="form-password" placeholder="Escribe tu contraseña" required minlength="5" maxlength="20">
+                </p>
+                <p>
+                    <input type="submit" value="Entrar" name="Entrar">
+                </p>
+                <a class="olvide_password" href="recuperar_password.html">¿Olvidaste tu contraseña?</a>
+            </form>
+        </div>
+    
+    <footer class="footer">
+        <p>© 2019 PTV. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

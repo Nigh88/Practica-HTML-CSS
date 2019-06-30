@@ -1,0 +1,140 @@
+@font-face {
+    font-family: gk;
+    src: url(../fonts/GK.otf);
+  }
+
+.ficha{
+    padding: 10rem;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    flex: 0 1 30%;
+}
+
+.foto img{
+    border: solid 6px white;
+    border-radius: 5px;
+}
+
+.descripcion{
+    flex: 0 1 32%;
+    padding: 0;
+    margin: 10px;
+}
+
+.descripcion h1{
+    color: rgb(101, 110, 236);
+    font-family: gk, sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.descripcion h2{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    width: min-content;
+}
+
+.descripcion h3{
+    color: darkorange;
+    font-size: 60px;
+    text-align: center;
+    padding: 0;
+    margin:0;
+    margin-top: -50px;
+    font-weight: bold;
+}
+
+.descripcion p{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.descripcion h4{
+    color:gray;
+}
+
+.descripcion ul{
+    margin: 0;
+    list-style: none;
+    color:white;
+    padding: 0;
+    text-align: center;
+}
+
+.trailer{
+    flex: 0 1 20%;
+    margin-top: 100px; 
+}
+
+.trailer h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    border-bottom: solid 3px white;
+}
+
+.trailer iframe{
+    margin-top: 0;
+    border: solid 3px white;
+    border-radius:5px;
+}
+
+.title_relacionados{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.title_relacionados h1{
+    margin:0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: solid 2px white;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer{
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .6rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer p{
+    font-size: 12px;
+    color: gray;
+}
+
+.footer a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+@media all and (max-width: 1700px){
+    .ficha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    }
+
+    .descripcion{
+        min-width: 300px;
+        max-height: 700px;
+        flex-direction: column;
+    }
+    
+    .trailer iframe{
+        max-width: 400px;
+        position: relative;
+        flex-direction: column;
+    }
+}
